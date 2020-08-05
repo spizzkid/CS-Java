@@ -1,0 +1,97 @@
+// Java 141 assignment16
+Write a program that asks the user 4 questions:
+
+How many random numbers do they want?
+What is the smallest random number?
+What is the largest random number?
+What filename do they want to use?
+ 
+
+Your program should then create the necessary random numbers, and write them to the file indicated.  
+
+However your program should print 5 numbers per line.   So for example if the use asks for 44 numbers, there should be 8 rows of 5 and 1 row of 4 numbers.  The numbers should be separated by comma's.  However you need to make sure that the last element does not have a comma behind it.
+
+So if the answers to the four quetions are above were the following:
+
+24
+10
+20
+The File.txt.
+
+Example:
+Then in  "The File.txt" I might see
+
+12,13,14,17,20,
+14,12,11,13,13,
+11,11,17,18,14,
+12,16,17,19,19,
+12,12,15,15
+
+Solution:
+// spizzkid
+// Aug 4 2020
+
+import java.util.*;
+import java.io.*;
+
+public class assignment16 {
+    public static void main(String [] args) {
+
+        Scanner userInputNum = new Scanner(System.in);                  // get necessary information from user
+        Scanner userInputString = new Scanner(System.in);
+
+        System.out.println("How many random numbers do they want?");
+        int numbers = userInputNum.nextInt();
+
+        System.out.println("What is the smallest random number?");
+        int smallestNum = userInputNum.nextInt();
+
+        System.out.println("What is the largest random number?");
+        int largestNum = userInputNum.nextInt();
+
+        System.out.println("What filename do they want to use?");
+        System.out.print("-->");
+        String fName = userInputString.nextLine();
+
+
+
+        int range = largestNum - smallestNum + 1;
+
+        int position = 1;              
+        String output = "";                           // store all numbers into a string
+
+        for (int i = 0; i < numbers ; i++) {
+
+            int rand = (int) (Math.random()*range) + smallestNum;    // set range
+
+            if (position == 5)                  // for reset to new line when there are 5 numbers in a line
+            {
+                output = output + rand + ",\n";
+                position = 1;
+            }
+            else
+            {
+                if(i == numbers -1)             //  print the last number without ","
+                {
+                    output = output + rand;
+                }
+                else
+                {
+                    output = output + rand + ",";
+
+                }
+                position++;
+            }
+        }
+        // print information to the file
+        try {
+            PrintStream newFile = new PrintStream(fName);
+            newFile.println(output);
+        }
+        catch (Exception e) {
+            System.out.println("Illegal input, quitting now");
+            System.exit(-1);
+        }
+
+    }
+}
