@@ -1,3 +1,4 @@
 # practiceHub
-This repository is just for my daily coding practice
+There are Java practice questiones
+Insider fold this the solution
 // 失败人士
