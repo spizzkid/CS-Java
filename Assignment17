@@ -1,0 +1,27 @@
+Create a program that asks the user to type in 12 words one by one.   The program should store each word in an array.  The program should then go through the array of words one by one and it should upper case all the odd numbered words, and lowercase all the even numbered words. (Remeber zero is even).   
+
+Then the program should go through the array and print off the entire "sentence" word by word onto a single line, adding a period to the end.  Then print off the list as an array using the Arrays.toString() command
+
+Note that there should be three loops used at minimum.  One to gather the data, and then a 2nd one to change the data, and a 3rd to output the data.
+
+A sample output might look like:
+
+Please type in word #1 : Alpha
+Please type in word #2 : bravo
+Please type in word #3 : charlie
+Please type in word #4 : delta
+Please type in word #5 : echo
+Please type in word #6 : foxtrot
+Please type in word #7 : golf
+Please type in word #8 : hotel
+Please type in word #9 : india
+Please type in word #10 : juliet
+Please type in word #11 : KILO
+Please type in word #12 : LimA
+
+Your sentence is:
+
+alpha BRAVO charlie DELTA echo FOXTROT golf HOTEL india JULIET kilo LIMA.
+
+As a string it would look like: [alpha,BRAVO,charlie,DELTA,echo,FOXTROT,golf,HOTEL,india,JULIET,kilo,LIMA]
+
