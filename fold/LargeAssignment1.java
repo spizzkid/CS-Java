@@ -1,6 +1,7 @@
 // Jiacheng Jiang
 // Cs 141 Jul 27
 
+// Program still have a flaw, it didn't print out "?" as the instruction required.
 import java.util.Scanner;
 
 public class LargeAssignment1 {
