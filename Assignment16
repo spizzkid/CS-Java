@@ -1,0 +1,28 @@
+// Java 141 assignment16
+Write a program that asks the user 4 questions:
+
+How many random numbers do they want?
+What is the smallest random number?
+What is the largest random number?
+What filename do they want to use?
+ 
+
+Your program should then create the necessary random numbers, and write them to the file indicated.  
+
+However your program should print 5 numbers per line.   So for example if the use asks for 44 numbers, there should be 8 rows of 5 and 1 row of 4 numbers.  The numbers should be separated by comma's.  However you need to make sure that the last element does not have a comma behind it.
+
+So if the answers to the four quetions are above were the following:
+
+24
+10
+20
+The File.txt.
+
+Example:
+Then in  "The File.txt" I might see
+
+12,13,14,17,20,
+14,12,11,13,13,
+11,11,17,18,14,
+12,16,17,19,19,
+12,12,15,15
