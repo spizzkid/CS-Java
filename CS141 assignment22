@@ -1,0 +1,43 @@
+Very similar to the prior assignment, for this assignment I want you to write a Fraction class that works with the FractionMath program above.   You can download the above file, and then it should use your Fraction.java file to run.
+
+Remember that fractions cannot have zero in the denominator, so if you ever have to change the denominator to zero, make it one instead.
+
+Your Fraction class should have the following
+
+Fields
+a numerator  (int)
+a denominator (int)
+Methods
+A default constructor
+that sets the numerator  to 1
+that sets the denominator to 1
+A full constructor
+That accepts both the numerator and denominator.
+Note that if the denominator is zero, you should change it to a 1.
+A toString() method
+That returns a string in the format
+ {space} numerator / denominator {space}
+ 2/5 
+however,  if the denominator is 1, then the fraction is a whole number so you should just return the numerator.
+i.e.  do not print 4/1  just print 4.
+getNumerator()
+getDenominator()
+These should just return the values with no changes.
+setNumerator()
+This should change the numerator
+.setDenominator()
+This should change the denominator, as long as it isn't zero.  
+If it is zero, then don't change anything, make no changes.
+getDecimalValue()
+This should return the decimal value of the fraction
+3/4 would return 0.75
+equals (Fraction other)
+This method should return a boolean type. 
+This method should compare the decimal value of this fraction with the decimal value of the "other" point and see if they are equal or not. 
+If equal return true, else return false;
+multiply(Fraction other)
+This method should take the current fraction and multiple it by the "other" fraction and change the value to the new fraction.
+So if x = 2/5 and y  = 3/4
+then x.multiply(y)
+would change x to 6/20
+but leave y as 3/4
