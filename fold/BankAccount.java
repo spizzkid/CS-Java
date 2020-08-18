@@ -3,6 +3,8 @@
  * @author Jiacheng Jiang
  * @version 2020/8/17
  */
+
+// This is the solution for assignment 21
 public class BankAccount {
 
     private int ID;
