@@ -30,3 +30,5 @@ This should add the amount x to the balance.
 if x is negative you still add it, but the balance should go down.
 If the balance is negative, then set it to zero before finishing.
 Upload the BankAcount.java file when you are done.
+
+The solution for this assignment is called BankAccount.java.
