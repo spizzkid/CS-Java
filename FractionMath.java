@@ -6,6 +6,7 @@
  *  with it.
  */
 
+// this is main program for cs 141 assignment22
 public class FractionMath
 {
   public static void main(String[] arguments)
