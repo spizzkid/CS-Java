@@ -1,0 +1,32 @@
+Main program File : BankAccountMainProgram.java
+
+For this assignment I want you to write a BankAccount class that works with the BankAccountMainProgram above.   You can download the above file, and then it should use your BankAccount.java file to run.
+
+Your BankAccount class should have the following
+
+Fields
+a Private ID  (int)
+a private Name (String)
+a private balance (double)
+Methods
+A default constructor
+that sets the ID to 0
+the balance to 0
+the name to "unknown"
+A full constructor
+That accepts all three values and sets the values accordingly.
+A toString() method
+That returns a string in the format
+Name [ID] = $balance
+Example: Betty  [1233203]  = $105.51
+getName()
+getBalance()
+getID()
+These should just return the values with no changes.
+setName()
+This should change the name on the account, and only the name.
+changeBalance(double x)
+This should add the amount x to the balance.
+if x is negative you still add it, but the balance should go down.
+If the balance is negative, then set it to zero before finishing.
+Upload the BankAcount.java file when you are done.
