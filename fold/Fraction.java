@@ -1,3 +1,5 @@
+// This is the solution of assignment 22
+
 /**
  * This is Fraction object
  * @author Jiacheng Jiang
