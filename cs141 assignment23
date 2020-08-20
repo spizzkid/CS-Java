@@ -1,0 +1,9 @@
+Using the drawing panel we used in class (DrawingPanel.java), draw a picture of an UFO.
+
+The UFO should be in the sky hovering over something ( A forest, or a city, or soemthing else).   Make sure there are people/animals in the forest/city or whatever.  
+
+Make sure the UFO has:
+
+A body
+At least one Window.
+An engine.
