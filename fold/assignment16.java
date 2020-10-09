@@ -1,6 +1,4 @@
 // Jiacheng Jiang
-// cs 141
-// Jiacheng Jiang
 // cs 141 Aug 4
 
 import java.util.*;
